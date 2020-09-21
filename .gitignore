@@ -1,0 +1,8 @@
+.gradle
+/**/build
+protobuf-gradle-plugin.i*
+gradle.properties
+/.idea
+local.properties
+**/*~
+.DS_Store

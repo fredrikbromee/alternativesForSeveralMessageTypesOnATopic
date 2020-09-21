@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.example";
+option java_multiple_files = true;
+
+message AccountTypeEvent {
+    int64 entityId = 1;
+    int64 sequenceNumber = 2;
+    string producer = 4;
+    AccountTypeEntity entity = 5;
+}
+
+message AccountTypeEntity {
+    int64 id = 1;
+    string name = 2;
+    string code = 3;
+    int64 sequenceNumber = 4;
+}
+
+message Marker {
+    string pointInTime = 1;
+}
