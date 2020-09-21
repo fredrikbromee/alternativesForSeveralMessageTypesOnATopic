@@ -1,6 +1,6 @@
-# More than one messages type in a schema in protobuf
+# More than one message type in a single-event schema in protobuf
 
-This is an example project that allows developers to see alternatives on how to declare protobuf schemas that contain
+This is an example project that allows developers to see alternatives on how to declare protobuf single-event schemas that can contain
 more than one message type. See e.g.
  https://www.confluent.io/blog/put-several-event-types-kafka-topic/ for a discussion on why this sometimes is a good
  idea.
