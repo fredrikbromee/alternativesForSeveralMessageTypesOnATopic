@@ -42,7 +42,7 @@ public class UsingTheAnyConceptToDeclareMessageType {
   @org.junit.Test
   public void testSerializeAndDeserializeAMarkerEventUsingAny() throws InvalidProtocolBufferException {
     // Given a Marker packed in an envelope using an 'Any' field
-    Marker event = Marker.newBuilder().setPointInTime("SOD baby").build();
+    Marker event = Marker.newBuilder().setPointInTime("This marks start of the business day").build();
     TopicEnvelopeUsingAny msg = TopicEnvelopeUsingAny.newBuilder()
             .setHeader(createHeader("ABC"))
             .setEvent(Any.pack(event))
